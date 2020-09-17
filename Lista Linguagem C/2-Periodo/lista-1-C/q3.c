@@ -24,6 +24,7 @@ int main()
     // Multiplicando os valores do vetor pelo numero digitado pelo usuario
     printf("\nPor quanto voce deseja multiplicar os valores do vetor?\t");
     scanf("%d", &num);
+    
     for(i = 0; i < T; i++)
         vet[i] = vet[i] * num;
 
