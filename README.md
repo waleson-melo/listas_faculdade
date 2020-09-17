@@ -4,4 +4,4 @@
 
 Linguagens:
 1. - [x] C
-2. - [] Python
+2. - [ ] Python
