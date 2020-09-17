@@ -1,6 +1,6 @@
 # Listas_Faculdade
 ***
- Lista de exercicios respondidos das materias de porgramação.
+ Lista de exercícios respondidos das matérias de programação.
 
 Linguagens:
 1. - [x] C
