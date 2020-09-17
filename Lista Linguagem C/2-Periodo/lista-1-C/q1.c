@@ -1,12 +1,12 @@
 /* 
-Questão 1. Crie um programa que preenche um vetor de inteiros de 100 números, colocando 0 nas
+    Questão 1. Crie um programa que preenche um vetor de inteiros de 100 números, colocando 0 nas
 posições par e 1 ímpar. Utilize para o tamanho do vetor, uma variável ou uma constante pelo
-#define. Questão
+#define.
 */
 
 #include <stdio.h>
 
-#define T 10
+#define T 100
 
 int main()
 {
