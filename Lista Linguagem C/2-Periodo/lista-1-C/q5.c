@@ -34,7 +34,7 @@ int main()
     for(i = 0; i < T; i++)
         result[i] = A[i] + B[i];
 
-    // Mostrando o vetor do resultado
+    // Mostrando o vetor resultado
     printf("\nResulatdo da soma:\n");
     for(i = 0; i < T; i++)
         printf("%d\t", result[i]);
