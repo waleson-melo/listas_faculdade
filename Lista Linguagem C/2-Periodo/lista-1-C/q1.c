@@ -12,6 +12,7 @@ int main()
 {
     int vet[T], i;
 
+    // Preenche o vetor com 0 se o indice for par ou com 1 se indice for impar
     for(i = 0; i < T; i++)
         if(i % 2 == 0)
             vet[i] = 0;
@@ -19,5 +20,5 @@ int main()
             vet[i] = 1;
 
     for(i = 0; i < T; i++)
-        printf('%d\t', &vet[i]);
+        printf("%d\t", vet[i]);
 }
