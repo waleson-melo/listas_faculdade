@@ -3,7 +3,10 @@
 
 #define T 2
 
-typedef struct endereco{
+typedef struct pessoa{
+    char nome[50];
+    char email[50];
+    // Endereco
     char rua[50];
     int numero;
     char complemento[50];
@@ -12,25 +15,16 @@ typedef struct endereco{
     char cidade[40];
     char estado[40];
     char pais[40];
-}Endereco;
 
-typedef struct telefone{
+    // Telefone
     int ddd;
     int numero;
-}Telefone;
 
-typedef struct data{
+    // Data aniversario
     int dia;
     int mes;
     int ano;
-}Data;
-
-typedef struct pessoa{
-    char nome[50];
-    char email[50];
-    Endereco endereco;
-    Telefone telefone;
-    Data aniversario;
+    
     char observacao[50];
 }Pessoa;
 
