@@ -1,10 +1,10 @@
 #include<stdio.h>
 
-#define T 2
-#define QN 3
-#define NA 6
+#define T 5     // Tamanho do Vetor de Aluno
+#define QN 3    // Quantidade de Notas de Trabalhos e Provas
+#define NA 6    // Nota de Aprovaçao
 
-typedef struct{
+typedef struct aluno{
     char matricula[11];
     char nome[50];
     float nota[QN];
@@ -13,7 +13,7 @@ typedef struct{
 int main()
 {
     Aluno aluno[T];
-    int i, j, posAluno = 0;
+    int i, j, posAluno = 0;     // posAluno salva a posiçao no vetor onde um determinado aluno está
     float maior, menor, soma = 0, media;
 
     for(i = 0; i < T; i++){
@@ -24,6 +24,7 @@ int main()
         scanf("%[^\n]s", aluno[i].nome);
         setbuf(stdin, NULL);
 
+        // Preenchendo o vetor de notas do registro do aluno
         for(j = 0; j < QN; j++){
             printf("Nota-%d: ", j + 1);
             scanf("%f", &aluno[i].nota[j]);
