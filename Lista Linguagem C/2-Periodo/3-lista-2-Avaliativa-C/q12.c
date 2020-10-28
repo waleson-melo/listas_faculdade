@@ -68,7 +68,7 @@ int main()
             default:
             // Se estiver no windows troque para system("cls")
                 system("clear");
-                printf("Opcao invalida\n");
+                printf("Opcao invalida\n\n");
                 break;
         }
     }
@@ -209,7 +209,7 @@ void pesquisarNome(Pessoa agenda[T], int quant)
             }
         }
         if(cont == 0){
-            printf("NENHUM CONTATO ENCONTRADO\n");
+            printf("NENHUM CONTATO \"%s\" ENCONTRADO\n", nome);
         }
     } else{
         printf("AGENDA VAZIA!!!\n");
@@ -297,10 +297,10 @@ void retirarPessoa(Pessoa agenda[T], int *quant)
                     agenda[i] = agenda[i+1];
                 }
                 *quant -= 1;
-                printf("CONTATO APAGADO!!!\n");
+                printf("CONTATO \"%s\" APAGADO!!!\n", nome);
             }
         } else{
-            printf("CONTATO NAO EXISTE!!!\n");
+            printf("CONTATO \"%s\" NAO EXISTE!!!\n", nome);
         }
     } else{
         printf("AGENDA VAZIA!!!\n");
