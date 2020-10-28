@@ -17,7 +17,7 @@ int main()
 
     dist = distPontos(x1, x2, y1, y2);
 
-    printf("Distancia entre os pontos: %f\n", dist);
+    printf("Distancia entre os pontos: %0.2f\n", dist);
 
     return 0;
 }
@@ -25,7 +25,5 @@ int main()
 // FUNÇOES
 float distPontos(float x1, float x2, float y1, float y2)
 {
-    float dist;
-    dist = sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
-    return dist;
+    return sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
 }
