@@ -2,10 +2,10 @@
 
 #define T 5
 
-typedef struct{
+typedef struct aluno{
     char nome[50];
     char matricula[11];
-    char curso[50];
+    char curso[40];
 }Aluno;
 
 int main()
