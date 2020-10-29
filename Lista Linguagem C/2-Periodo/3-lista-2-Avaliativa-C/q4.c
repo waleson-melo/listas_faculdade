@@ -1,11 +1,9 @@
 #include<stdio.h>
 
-#define T 5
+#define T 5     // Tamanho do vetor de aluno
 
 typedef struct aluno{
-    char nome[50];
-    char matricula[11];
-    char curso[40];
+    char nome[50], matricula[11], curso[40];
 }Aluno;
 
 int main()
@@ -13,6 +11,7 @@ int main()
     Aluno aluno[T];
     int i;
 
+    // Inserindo aluno
     for(i = 0; i < T; i++){
         printf("Nome: ");
         scanf("%[^\n]s", aluno[i].nome);
