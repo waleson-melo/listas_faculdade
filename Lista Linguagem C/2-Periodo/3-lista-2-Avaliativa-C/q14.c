@@ -3,18 +3,17 @@
 
 typedef struct comodo{
 	int tipo;
-	float largura;
-	float altura;
-	float comprimento;
+	float largura, altura, comprimento;
 }Comodo;
 
+// Prototipos das funçoes
 float calculaArea(Comodo c);
 float lampada(int x, float m);
 	
 int main(){
     Comodo comodo;
     int i = 1, tipo;	
-    float area, numLampada;
+    float area, numLampada, lam;
 
     while(i != 0){
         printf("Tipo do comodo: ");
@@ -29,9 +28,15 @@ int main(){
             scanf("%f", &comodo.comprimento);
             
             area = calculaArea(comodo);
-            numLampada = ceil(lampada(comodo.tipo, area));
+            lam = lampada(comodo.tipo, area);
+            if(lam != 0){
+                numLampada = ceil(lam);
+                printf("\nNecessario %0.0f lampadas para esse comodo\n", numLampada);
+            } else{
+                printf("\nTipo de comodo invalido\n");
+            }
             
-            printf("Para esse comundo e necessario %0.0f lampadas\n", numLampada);
+            printf("------------------------------------------\n");
         }
         else{
             i = 0;
@@ -40,22 +45,25 @@ int main(){
 }
 
 // FUNÇOES
+// Calcular a area
 float calculaArea(Comodo comodo){
     float area = comodo.largura * comodo.comprimento;
     return area;
 }
 
-float lampada(int x, float m){
-    switch(x){
-        case 0:
-            return m*12/60;
-        case 1:
-            return m*15/60;
-        case 2:
-            return m*18/60;
-        case 3:
-            return m*20/60;
-        case 4:
-            return m*22/60;	
+// Calcular o numero de lampadas
+float lampada(int tipo, float m){
+    if(tipo == 0){
+        return m*12/60;
+    } else if(tipo == 1){
+        return m*15/60;
+    } else if(tipo == 2){
+        return m*18/60;
+    } else if(tipo == 3){
+        return m*20/60;
+    } else if(tipo == 4){
+        return m*22/60;
+    } else{
+        return 0;
     }
 }
