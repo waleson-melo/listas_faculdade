@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-#define T 5
+#define T 5     // Tamanho do vetor carro
 
 typedef struct{
     char marca[15];
@@ -14,6 +14,7 @@ int main()
     int i;
     float p = 1;
 
+    // Inserindo
     for(i = 0; i < T; i++){
         printf("Marca: ");
         scanf("%[^\n]s", carro[i].marca);
