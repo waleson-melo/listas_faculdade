@@ -41,9 +41,10 @@ int main()
 
 
     printf("========DADOS==========\n");
-    printf("Matricula: %d\nNome: %s\n", aluno.matricula, aluno.nome);
-    printf("Codigo disciplina: %d\nNome disciplina: %s\n", aluno.disciplina.codigo, aluno.disciplina.nome);
-    printf("CPF professor: %ld\nNome professor: %s\n", aluno.disciplina.professor.cpf, aluno.disciplina.professor.nome);
+    printf("Matricula: %d\nNome: %s\nCodigo disciplina: %d\nNome disciplina: %s\n",
+        aluno.matricula, aluno.nome, aluno.disciplina.codigo, aluno.disciplina.nome);
+    printf("CPF professor: %ld\nNome professor: %s\n",
+        aluno.disciplina.professor.cpf, aluno.disciplina.professor.nome);
 
     return 0;
 }
