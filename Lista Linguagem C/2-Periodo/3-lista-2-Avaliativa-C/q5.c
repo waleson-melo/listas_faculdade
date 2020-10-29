@@ -5,8 +5,7 @@
 #define NA 6    // Nota de Aprovaçao
 
 typedef struct aluno{
-    char matricula[11];
-    char nome[50];
+    char matricula[11], nome[50];
     float nota[QN];
 }Aluno;
 
