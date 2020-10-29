@@ -2,11 +2,11 @@
 #include<stdlib.h>
 #include<string.h>
 
-#define T 2
+#define T 5     // Tamanho do vetor agenda
 
 typedef struct pessoa{
-    char nome[50], email[50], rua[50], complemento[50], bairro[30], cidade[40],
-        estado[40], pais[40], observacao[50];
+    char nome[50], email[50], rua[50], complemento[50], bairro[30],
+        cidade[40], estado[40], pais[40], observacao[50];
     int numeroC, cep, ddd, numeroT, dia, mes, ano;
 }Pessoa;
 
@@ -22,7 +22,7 @@ void retirarPessoa(Pessoa agenda[T], int *quant);
 int main()
 {
     Pessoa agenda[T];
-    int i = 1, op, quant = 0;
+    int i = 1, op, quant = 0;   // op de opcao e quant de quantidade de elementos no vetor
 
     while(i != 0){
         printf("==========AGENDA==========\n");
