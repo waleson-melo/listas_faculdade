@@ -2,9 +2,8 @@
 #include <stdio.h>
 
 typedef struct pessoa{
-    char nome[50];
     int idade;
-    char endereco[50];
+    char nome[50], endereco[50];
 }Pessoa;
 
 int main()
