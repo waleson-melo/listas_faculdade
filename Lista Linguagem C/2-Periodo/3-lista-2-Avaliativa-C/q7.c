@@ -1,20 +1,20 @@
 #include<stdio.h>
 #include<string.h>
 
-#define T 2
+#define T 2     // Tamanho do vetor livro
 
 typedef struct{
-    char titulo[30];
-    char autor[15];
+    char titulo[30], autor[15];
     int ano;
 }Livro;
 
 int main()
 {
     Livro livro[T];
-    char pesq[30];
-    int i, nb = 0;
+    char pesq[30];      // Nome do livro que se deseja pesquisar
+    int i, nb = 0;      // nb guarda o numero de buscas encontradas na pesquisa
 
+    // Inserindo
     for(i = 0; i < T; i++){
         printf("Titulo: ");
         scanf("%[^\n]s", livro[i].titulo);
@@ -28,14 +28,14 @@ int main()
         printf("-----------------------\n");
     }
 
-    // Pegando a pesquisa do usuario
+    // Pegando do usuario o nome do livro para pesquisa
     printf("Nome do livro para pesquisa: ");
     scanf("%[^\n]s", pesq);
 
     printf("=============LIVROS==============\n");
     for(i = 0; i < T; i++){
         if(strcmp(pesq,livro[i].titulo) == 0){
-            nb++;
+            nb++;       // Incremento do numero de buscas encontrados
             printf("Titulo: %s\nAutor: %s\nAno: %d\n", livro[i].titulo, livro[i].autor, livro[i].ano);
             printf("-----------------------\n");
         }
