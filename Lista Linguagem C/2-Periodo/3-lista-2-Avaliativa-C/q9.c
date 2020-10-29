@@ -6,9 +6,8 @@ typedef struct proprietario{
 }Proprietario;
 
 typedef struct carro{
-    char modelo[30];
+    char modelo[30], placa[10];
     int ano;
-    char placa[10];
     Proprietario proprietario;
 }Carro;
 
@@ -33,8 +32,9 @@ int main()
     scanf("%[^\n]s", carro.proprietario.nome);
 
     printf("===========DADOS============\n");
-    printf("Modelo: %s\nAno: %d\nPlaca: %s\n", carro.modelo, carro.ano, carro.placa);
-    printf("CPF: %ld\nNome: %s\n", carro.proprietario.cpf, carro.proprietario.nome);
+    printf("Modelo: %s\nAno: %d\nPlaca: %s\nCPF: %ld\nNome: %s\n",
+        carro.modelo, carro.ano, carro.placa, carro.proprietario.cpf,
+        carro.proprietario.nome);
 
     return 0;
 }
