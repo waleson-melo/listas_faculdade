@@ -2,18 +2,15 @@
 #include<stdlib.h>
 #include<string.h>
 
-#define T 2
+#define T 5     // Tamanho do vetor entrevistado
 
 typedef struct entrevista{
     int idade;
     float rendaMensal;
-    char nome[50],
-         sexo[10],
-         fumante[4],
-         gostaEsporte[4],
-         pratiAtivFisi[4];
+    char nome[50], sexo[10], fumante[4], gostaEsporte[4], pratiAtivFisi[4];
 }Entrevista;
 
+// Prototipos de funcoes
 void inserir(Entrevista entrevistado[T], int *quant);
 void pesquisar(Entrevista entrevistado[T], int quant);
 void estatisticas(Entrevista entrevistado[T], int quant, int op);
@@ -21,7 +18,7 @@ void estatisticas(Entrevista entrevistado[T], int quant, int op);
 int main()
 {
     Entrevista entrevistado[T];
-    int i = 1, op, quant = 0;
+    int i = 1, op, quant = 0;       // op é a operaçao
 
     while(i != 0){
         printf("1-Inserir\n2-Pesquisar\n3-Estatisticas\n0-Sair\nOpcao: ");
