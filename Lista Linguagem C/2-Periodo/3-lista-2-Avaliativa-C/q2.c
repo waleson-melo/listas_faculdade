@@ -1,5 +1,6 @@
 #include<stdio.h>
 
+// Prototipo da funçao
 int potencia(int base, int expoente);
 
 int main()
@@ -14,6 +15,8 @@ int main()
     result = potencia(base, expoente);
 
     printf("%d elevado a %d = %d\n", base, expoente, result);
+
+    return 0;
 }
 
 int potencia(int base, int expoente)
