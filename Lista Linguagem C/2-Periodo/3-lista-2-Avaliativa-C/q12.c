@@ -97,10 +97,10 @@ void inserir(Pessoa agenda[T], int *quant)
         strcpy(agenda[pos].nome, nome);
         setbuf(stdin, NULL);
         printf("Email: ");
-        scanf("%[^\n]", agenda[pos].email);
+        scanf("%[^\n]s", agenda[pos].email);
         setbuf(stdin, NULL);
         printf("Rua: ");
-        scanf("%[^\n]", agenda[pos].rua);
+        scanf("%[^\n]s", agenda[pos].rua);
         printf("Numero Casa: ");
         scanf("%d", &agenda[pos].numeroC);
         setbuf(stdin, NULL);
