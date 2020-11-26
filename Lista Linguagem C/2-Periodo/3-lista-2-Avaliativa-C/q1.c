@@ -1,11 +1,13 @@
 #include<stdio.h>
 #include<math.h>
 
+// Prototipo da funçao
 float distPontos(float x1, float x2, float y1, float y2);
 
 int main()
 {
     float x1, x2, y1, y2, dist;
+    
     printf("Digite o valor de x1: ");
     scanf("%f", &x1);
     printf("Digite o valor de y1: ");
